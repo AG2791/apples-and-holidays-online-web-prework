@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
    holiday_hash.each do | kseason, vholiday|
     puts "#{kseason.to_s.capitalize}:"
     vholiday.each do |vholiday, vsupply|
-      puts "#{vholiday.to_s.split("_").collect {|vsupply| vsupply.capitalize}.join(" ")}: #{vsupply.join(", ")}"
+      puts " #{vholiday.to_s.split("_").collect {|vsupply| vsupply.capitalize}.join(" ")}: #{vsupply.join(", ")}"
     end
  end 
 end
